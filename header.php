@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 
     <head>
-        <meta charset="utf-8">
-        <meta name="description" content="To jest aplikacja ZOO">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Aplikacja ZOO</title>
-
-        <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body class="text-center">
     <header>
-        <nav>
-            <a href="#">
-                <img src="img/logo.png" alt="Logo Zoo">
-            </a>
-            <ul>
-                <li><a href="index.php">Główna</a></li>
-                <li><a href="#">O ZOO</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-            <div>
-                <form action="includes/login.inc.php" method="post">
-                    <input type="text" name="mailuid" placeholder="Username/E-mail...">
-                    <input type="password" name="pwd" placeholder="Password...">
-                    <button type="submit" name="login-submit">Login</button>
-                </form>
-                <a href="signup.php">Signup</a>
-                <form action="includes/logout.inc.php" method="post">
-                    <button type="submit" name="logout-submit">Logout</button>
-                </form>
-            </div>
-        </nav>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">ZOO App</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.php">Główna</a></li>
+        <li><a href="o.zoo.php">O ZOO</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Zarejestruj</a></li>
+        <li><a href="includes/login.inc.php"><span class="glyphicon glyphicon-log-in"></span> Zaloguj</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     </header>
     </body>
 </html>
